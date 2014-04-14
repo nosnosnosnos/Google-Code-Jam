@@ -6,7 +6,9 @@
 
 using namespace std;
 
-void Sol(int &cases,ifstream &ifs)
+ifstream ifs("A-small-practice.in");
+
+void Sol(int &cases)
 {
 	int C,I;
 	ifs >> C;
@@ -33,12 +35,10 @@ void Sol(int &cases,ifstream &ifs)
 
 int main()
 {
-	ifstream ifs("A-small-practice.in");
-	
 	int N;
 	ifs >> N;
 	for(int c=0;c<N;c++){
-		Sol(c,ifs);
+		Sol(c);
 	}
 }
 

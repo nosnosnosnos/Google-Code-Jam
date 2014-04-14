@@ -6,8 +6,9 @@
 #include <stack>
 
 using namespace std;
+ifstream ifs("B-large-practice.in");
 
-void Sol(int &cases,ifstream &ifs)
+void Sol(int &cases)
 {
 	stack<string> st;
 	string str,ret="";
@@ -36,14 +37,12 @@ void Sol(int &cases,ifstream &ifs)
 }
 
 int main()
-{
-	ifstream ifs("B-large-practice.in");
-	
+{	
 	int N;
 	ifs >> N;
 	ifs.ignore();	//\n
 	for(int c=0;c<N;c++){
-		Sol(c,ifs);
+		Sol(c);
 	}
 }
 
